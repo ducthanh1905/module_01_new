@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>chuyển đổi tiền tệ</title>
 </head>
 <body>
-$END$
+
+Amount
+<input type=" number" id="dauvao"><br>
+From Currency
+<select name="From Currency" id="select1">
+
+    <option value="a">VNĐ</option>
+    <option value="b">USD</option>
+</select><br>
+To Currency
+<select name="To Currency" id="select2">
+    <option value="a">VNĐ</option>
+    <option value="b">USD</option>
+
+</select><br>
+<button onclick="convert()">convert</button><br>
+
+<p id="result">result:</p>
+<script>
+    function convert() {
+               let giatrinhap=document.getElementById("dauvao").value;
+               let select1=document.getElementById("select1").value;
+               let select2=document.getElementById("select2").value;
+               if (select1==a && select2==b)
+                   alert(giatrinhap/23000)
+    }
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

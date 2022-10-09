@@ -7,24 +7,48 @@
 <body>
 
     <h1>caculator</h1><br>
-    <input type="value1" id="a" value="number1">
-    <input type="value2" id="b" value="number2"><br>
+    <input type="value1" id="firstnumber" value="number1">
+    <input type="value2" id="secondnumber" value="number2"><br>
 
-    <button type="button" onclick="addition(+)" id="c">addition(+)</button>
-    <button type="button" onclick="subtraction(-)" id="d">subtraction(-)</button>
-    <button type="button" onclick="multiplication(*)" id="e">multiplication(*)</button>
-    <button type="button" onclick="devision(/)" id="f">devision(/)</button>
+    <button type="button" onclick="addition()" >addition(+)</button>
+    <button type="button" onclick="subtraction()" >subtraction(-)</button>
+    <button type="button" onclick="multiplication()" >multiplication(*)</button>
+    <button type="button" onclick="devision()" >devision(/)</button>
     <p id="result">result:</p>
 
 
 <script>
     function addition() {
-        let a=document.getElementById(a).value;
-        let b=document.getElementById(b).value;
-        let value1=parseInt(a);
-        let value2=parseInt(b);
-        let result=value1+value2;
-        document.write("result: " + result);
+        let firstnumber=document.getElementById("firstnumber").value;
+        let secondnumber=document.getElementById("secondnumber").value;
+        let value1=parseInt(firstnumber);
+        let value2=parseInt(secondnumber);
+        let result= value1 + value2;
+        document.getElementById(result).innerHTML= "the result is:"+ result;
+    }
+    function subtraction() {
+        let firstnumber=document.getElementById("firstnumber").value;
+        let secondnumber=document.getElementById("secondnumber").value;
+        let value1=parseInt(firstnumber);
+        let value2=parseInt(secondnumber);
+        let result= value1 - value2;
+        document.getElementById(result).innerHTML= "the result is:"+ result;
+    }
+    function multiplication() {
+        let firstnumber=document.getElementById("firstnumber").value;
+        let secondnumber=document.getElementById("secondnumber").value;
+        let value1=parseInt(firstnumber);
+        let value2=parseInt(secondnumber);
+        let result= value1 * value2;
+        document.getElementById(result).innerHTML= "the result is:"+ result;
+    }
+    function devision() {
+        let firstnumber=document.getElementById("firstnumber").value;
+        let secondnumber=document.getElementById("secondnumber").value;
+        let value1=parseInt(firstnumber);
+        let value2=parseInt(secondnumber);
+        let result= value1 / value2;
+        document.getElementById(result).innerHTML= "the result is:"+ result;
     }
 </script>
 </body>

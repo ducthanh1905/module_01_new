@@ -7,49 +7,76 @@
 <body>
 
     <h1>caculator</h1><br>
-    <input type="value1" id="firstnumber" value="number1">
-    <input type="value2" id="secondnumber" value="number2"><br>
+    <input type="number" id="firstnumber" placeholder="number1">
+    <input type="number" id="secondnumber" placeholder="number2" ><br>
 
-    <button type="button" onclick="addition()" id="Addition" >addition(+)</button>
-    <button type="button" onclick="subtraction()" id="Subtraction" >subtraction(-)</button>
-    <button type="button" onclick="multiplication()" id="Multiplication" >multiplication(*)</button>
-    <button type="button" onclick="devision()" id="Devision" >devision(/)</button>
-    <p id="result">result:</p>
+    <button type="button" onclick="addition()">addition(+)</button>
+    <button type="button" onclick="subtraction()">subtraction(-)</button>
+    <button type="button" onclick="multiplication()">multiplication(*)</button>
+    <button type="button" onclick="devision()">devision(/)</button>
+    <br>
+    result: <span id="result"></span>
 
 
 <script>
     function addition() {
-        let firstnumber=document.getElementById("firstnumber").value;
-        let secondnumber=document.getElementById("secondnumber").value;
-        let value1=parseInt(firstnumber);
-        let value2=parseInt(secondnumber);
-        let result= value1 + value2;
-        document.getElementById(result).innerHTML= "the result is:"+ result;
+        let firstnumber = document.getElementById("firstnumber").value;
+        let secondnumber = document.getElementById("secondnumber").value;
+        let value1 = parseInt(firstnumber);
+        let value2 = parseInt(secondnumber);
+        let result = value1 + value2;
+        document.getElementById('result').innerHTML = "is " + result;
     }
     function subtraction() {
-        let firstnumber=document.getElementById("firstnumber").value;
-        let secondnumber=document.getElementById("secondnumber").value;
-        let value1=parseInt(firstnumber);
-        let value2=parseInt(secondnumber);
-        let result= value1 - value2;
-        document.getElementById(result).innerHTML= "the result is:"+ result;
+        let firstnumber = document.getElementById("firstnumber").value;
+        let secondnumber = document.getElementById("secondnumber").value;
+        let value1 = parseInt(firstnumber);
+        let value2 = parseInt(secondnumber);
+        let result = value1 - value2;
+        document.getElementById('result').innerHTML = "is " + result;
     }
     function multiplication() {
-        let firstnumber=document.getElementById("firstnumber").value;
-        let secondnumber=document.getElementById("secondnumber").value;
-        let value1=parseInt(firstnumber);
-        let value2=parseInt(secondnumber);
-        let result= value1 * value2;
-        document.getElementById(result).innerHTML= "the result is:"+ result;
+        let firstnumber = document.getElementById("firstnumber").value;
+        let secondnumber = document.getElementById("secondnumber").value;
+        let value1 = parseInt(firstnumber);
+        let value2 = parseInt(secondnumber);
+        let result = value1 * value2;
+        document.getElementById('result').innerHTML = "is " + result;
     }
     function devision() {
-        let firstnumber=document.getElementById("firstnumber").value;
-        let secondnumber=document.getElementById("secondnumber").value;
-        let value1=parseInt(firstnumber);
-        let value2=parseInt(secondnumber);
-        let result= value1 / value2;
-        document.getElementById(result).innerHTML= "the result is:"+ result;
+        let firstnumber = document.getElementById("firstnumber").value;
+        let secondnumber = document.getElementById("secondnumber").value;
+        let value1 = parseInt(firstnumber);
+        let value2 = parseInt(secondnumber);
+        let result = value1 / value2;
+        document.getElementById('result').innerHTML = "is " + result;
     }
+
+
+    // function subtraction() {
+    //     let firstnumber=document.getElementById("firstnumber").value;
+    //     let secondnumber=document.getElementById("secondnumber").value;
+    //     let value1=parseInt(firstnumber);
+    //     let value2=parseInt(secondnumber);
+    //     let result= value1 - value2;
+    //     document.getElementById(result).innerHTML= " is:"+ result;
+    // }
+    // function multiplication() {
+    //     let firstnumber=document.getElementById("firstnumber").value;
+    //     let secondnumber=document.getElementById("secondnumber").value;
+    //     let value1=parseInt(firstnumber);
+    //     let value2=parseInt(secondnumber);
+    //     let result= value1 * value2;
+    //     document.getElementById(result).innerHTML= " is:"+ result;
+    // }
+    // function devision() {
+    //     let firstnumber=document.getElementById("firstnumber").value;
+    //     let secondnumber=document.getElementById("secondnumber").value;
+    //     let value1=parseInt(firstnumber);
+    //     let value2=parseInt(secondnumber);
+    //     let result= value1 / value2;
+    //     document.getElementById(result).innerHTML= " is:"+ result;
+    // }
 </script>
 </body>
 </html>

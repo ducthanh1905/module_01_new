@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let score1=parseInt(prompt("điểm bài kiểm tra "));
+    let score2=parseInt(prompt("điểm thi giữa kỳ"));
+    let score3=parseInt(prompt("điểm thi cuối kỳ "));
+    let average=(score1+score2+score3)/3;
+    if (average>=6.5){
+    alert("loại giỏi");
+    }else if((average>=5.0)&&(average<=6.4)){
+        alert("loại khá");
+    }else if ((average>3.5)&&(average<=4.9)){
+        alert("loại trung bình");
+    }
+
+</script>
+</body>
+</html>

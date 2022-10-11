@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài 4</h1>
+<p>Tìm max</p>
+<br>
+<button onclick="bai4()">Bấm vào để tìm số lớn nhât</button>
+<p id="resultBai4">Kết quả số lớn nhất:</p>
+function bai4() {
+let a = prompt("Nhập số a:");
+let b = prompt("Nhập số b:");
+let c = prompt("Nhập số c:");
+a = parseInt(a);
+b = parseInt(b);
+c = parseInt(c);
+let max = a;
+if (a > b && a> c) {
+} else if (b>c) {
+max = b;
+} else {
+max = c;
+}
+document.getElementById('resultBai4').innerHTML = "Max là " + max;
+}
+</body>
+</html>

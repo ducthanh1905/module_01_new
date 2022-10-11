@@ -5,21 +5,26 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    <button onclick="max()"></button>
-   <p id="resultmax">số lớn nhất là:</p>
-    let number1= parseInt(prompt("nhập số a"));
-    let number2= parseInt(prompt("nhập số b"));
-    let number3= parseInt(prompt("nhập số c"));
-    let max= number1;
-    if ((number1>number2)&&(number1>number3)) {
 
-    }else if (number2>number3){
-        max=number2;
+   <button onclick="max()">input</button>
+   <p id="max">số lớn nhất là:</p>
+    <script>
+    function max(){
+        let a= parseInt(prompt("nhập số a"));
+        let b= parseInt(prompt("nhập số b"));
+        let c= parseInt(prompt("nhập số c"));
+        let max= a;
+
+
+    if ( a > b && a > c) {
+
+    }else if (b>c){
+        max=b;
     }else{
-        max=number3;
+        max=c;
     }
-    document.getElementById("max()").innerText="Max là " +max;
+    document.getElementById("max").innerText = "Max là " +max;
+    }
 </script>
 </body>
 </html>

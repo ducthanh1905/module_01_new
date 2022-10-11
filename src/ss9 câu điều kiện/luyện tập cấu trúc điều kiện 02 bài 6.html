@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h2>a*x+b=0</h2><br/>
+  nhập số a:<input type="number" id="a" ><br>
+  nhập số b:<input type="number" id="b" ><br>
+    <span id="result"></span>
+    <button type="submit" onclick="result()">check</button>
+
+
+
+
+<script>
+
+    function result() {
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
+
+        if (a === 0) {
+            document.getElementById("result").innerText = "phương trình vô nghiệm ";
+        } else if(a!=0){
+            document.getElementById("result").innerText="phương trình có nghiệm duy nhất" +(-b/a);
+        }
+    }
+</script>
+</body>
+</html>

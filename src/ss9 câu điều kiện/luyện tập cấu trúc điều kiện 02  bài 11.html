@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let income=(prompt("nhập thu nhập cá nhân"));
+    if(5<income&&income<10){
+        alert("số tiền thuế thu nhập cá nhân là:" + income*0.1 +"tr")
+    }else if (10<income&&income<18){
+        alert("số tiền thuế thu nhậpcá nhân là:" + income*0.15+"tr")
+    }
+    else if (18<income&&income<32){
+        alert("số tiền thu thuế  nhập cá nhân là:" + income*0.2+"tr")
+    }
+    else if (32<income&&income<52){
+        alert("số tiền thu thuế nhập cá nhân là:" + income*0.25+"tr")
+    }
+    else if (52<income&&income<80){
+        alert("số tiền thuế thu nhập  cá nhân là:" + income*0.3+"tr")
+    }
+    else {
+        alert("số tiền thuế thu nhập cá nhân là:" + income*0.35+"tr")
+    }
+</script>
+</body>
+</html>
